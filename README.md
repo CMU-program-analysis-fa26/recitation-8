@@ -25,7 +25,7 @@ pip install z3-solver
 If the installation is successful you should be able to run `python3
 example1.py`, which solves the equation `x ** 2 + 3 = 228` for integer `x`. It should output either `15` or `-15`.
 
-# Example #1
+# Tasks #1 & #2
 Here are the contents of `example1.py`:
 
 ```python
@@ -49,15 +49,15 @@ solve(constraint)
 
 This declares an Z3 `Int` constant named `x`, creates a constraint that requires `x * x + 3 = 228` to hold, and then calls the solver to find a solution.
 
-## Task 1a
+## Task #1
 
 If your result of running `python3 example1.py` is positive, then can you add a constraint to force the output to be negative? If your result is negative, can you add a constraint to force the output to be positive?
 
-## Task 1b
+## Task #2
 
 Modify the constraint(s) to become unsatisfiable (non-trivially), and then try running the solver again.
 
-# Example #2
+# Task #3
 
 Complete `example2.py` to solve the following system:
 ```
@@ -67,7 +67,7 @@ x * x + 1 = y - 2
 ```
 in integers.
 
-# Challenge
+# Task #4: Challenge
 
 You will complete this task in `challenge.py`.
 
@@ -89,7 +89,14 @@ true:
 
 **Don't brute force it, that will take too long.**
 
-The set of possible characters are `a-z` (ASCII 97-122) and spaces (ASCII 20). The string has length at least 30, and there are no words (consecutive letters) that are more than five letters.
+The set of possible characters are `a-z` (ASCII 97-122) and spaces (ASCII 20). The string has length at least 30, and there are no words (consecutive letters) that are more than five letters. (Think about how this can be implemented as logical formulas.)
+
+<details >
+<summary>Hint</summary>
+
+`Implies`!
+</details>
+
 
 Have fun!
 
