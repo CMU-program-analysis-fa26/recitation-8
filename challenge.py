@@ -27,4 +27,4 @@ def solve(vars, constraints):
 
 oracle = 0x15579fc44eb12487e9e2ff5b80bd040c5
 
-# TODO: Complete the challenge here. You should call is_letter, is_space, and solve (potentially multiple times).
+# TODO: Complete the challenge here. You should call is_letter, is_space, and solve (potentially multiple times). Once you find a solution, print it out and stop.

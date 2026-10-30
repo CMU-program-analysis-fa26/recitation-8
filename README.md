@@ -91,12 +91,19 @@ true:
 
 **Don't brute force it, that will take too long.**
 
-The set of possible characters are `a-z` (ASCII 97-122) and spaces (ASCII 20). The string has length at least 30, and there are no words (consecutive letters) that are more than five letters. (Think about how this can be implemented as logical formulas.)
+The set of possible characters are `a-z` (ASCII 97-122) and spaces (ASCII 20). The string has length at most 30, and there are no words (consecutive letters) that are more than five letters. (Think about how this can be implemented as logical formulas.)
+
+<details>
+<summary>Hint #1</summary>
+
+You are allowed to create multiple instances of the solver and run different Z3 instances in your `challenge.py`. This could be useful trying out different lengths.
+
+</details>
 
 <details >
-<summary>Hint</summary>
+<summary>Hint #2</summary>
 
-`Implies`!
+`Implies` may be useful for enforcing that there are no words more than 5 letters.
 </details>
 
 
