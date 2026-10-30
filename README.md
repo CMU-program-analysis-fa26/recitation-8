@@ -1,5 +1,7 @@
 # Set up
 
+Make a fork of this repository.
+
 ## Create a Python virtual environment
 
 First, create a virtual environment to isolate the dependencies:
